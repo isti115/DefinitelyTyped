@@ -1221,7 +1221,7 @@ declare namespace React {
      *
      * @see {@link ForwardRefRenderFunction}
      */
-    type ForwardedRef<T> = ((instance: T | null) => void) | MutableRefObject<T | null> | null;
+    type ForwardedRef<T> = (RefCallback<T> | MutableRefObject<T | null> | null;
 
     /**
      * The type of the function passed to {@link forwardRef}. This is considered different
